@@ -1,0 +1,52 @@
+/** 
+Autor: Ana Camila Nambo Delhumeau
+Fecha: 05/02/2024
+Lenguaje: CSS
+Diseño web II
+**/
+
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    display: none;
+}
+.carousel img.active {
+    display: block;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-number {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
